@@ -1,0 +1,21 @@
+(
+    name: "PluginName",
+    description: "Plugin Description: Example",
+    bin: (
+        path: "target/debug/tmux-sessions",
+    ),
+    icon: Name("tmux"),
+    // Optional
+    query: (
+        // Optional -- if we should isolate this plugin when the regex matches
+        isolate: true,
+        // Optional -- Plugin which searches on empty queries
+        persistent: true,
+        // Optional -- avoid sorting results from this plugin
+        no_sort: true,
+        // Optional -- pattern that a query must have to be sent to plugin
+        regex: "^ta$",
+        // Optional -- the launcher should keep a history for this plugin
+        history: true,
+    )
+)
