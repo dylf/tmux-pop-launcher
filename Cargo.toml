@@ -10,7 +10,7 @@ log = "0.4"
 simplelog = "0.12"
 pop-launcher = "1"
 serde_json = "1"
-tokio = { version = "1", features = ["macros", "rt"] }
+tokio = { version = "1", features = ["macros", "rt", "io-std"] }
 futures = "0.3"
-
-
+blocking = "1"
+chrono = "0.4"
